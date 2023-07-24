@@ -1,0 +1,47 @@
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    
+    .slick-slider {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: absolute;
+      top: 144px;
+      
+      .slick-list {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .slick-track {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    
+    .slick-slide {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  
+  .slider-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    button {
+      background-color: #f2f2f2;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+}

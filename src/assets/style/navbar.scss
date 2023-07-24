@@ -1,0 +1,144 @@
+@import "../font/style.css";
+
+.nav {
+
+    background-image: url("../img/Back-Images.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 45px 122px 324px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Sound {
+        position: absolute;
+        top: 199px;
+        left: 1390px;
+    }
+
+    .firstnav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 49px;
+
+        .menu {
+            font-family: 'Gilroy-Medium ☞';
+            font-size: 14px;
+            color: #ffffff;
+            width: auto;
+            border-radius: 8px;
+            border: 1px;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.263) 100%);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 34px;
+            padding: 13px 19px 12px 27px;
+        }
+    }
+
+    .lastnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        font-family: 'Gilroy-Medium ☞';
+        font-size: 14px;
+        gap: 15px;
+        position: relative;
+
+        .list {
+            width: auto;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.263) 100%);
+            border-radius: 8px;
+            border: 1px;
+            padding: 14px 53px 12px 23px;
+            cursor: pointer;
+
+        }
+
+        .signin {
+            width: auto;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.263) 100%);
+            border-radius: 8px;
+            border: 1px;
+            padding: 14px 28px 12px;
+            cursor: pointer;
+
+        }
+    }
+
+    .dropdown-menu {
+        font-family: 'Gilroy-Bold ☞';
+        width: 248px;
+        height: 219px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        top: 88px;
+        left: 1052px;
+        z-index: 1;
+        background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.263) 100%);
+        border-radius: 7px;
+
+        .close {
+            position: absolute;
+            top: -9px;
+            left: 235px;
+        }
+
+        .element {
+            
+            div {
+                
+                width: 207px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 3px;
+               padding-left: 3px;
+                padding-top: 5px;
+
+                .img {
+                    width: 70px;
+                    height: 41px;
+
+                    img {
+                        border: 3px;
+                    }
+
+                }
+
+                .text {
+                    font-size: 8.3px;
+                    width: 123px;
+                    height: auto;
+                    background-color: black;
+                    color: #ffffff;
+                    padding: 16px 0px 14px 14px;
+
+                    img {
+                        padding-right: 14px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .exitimg {
+        width: auto;
+    }
+
+    .language {
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+}

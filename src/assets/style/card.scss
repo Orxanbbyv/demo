@@ -1,0 +1,84 @@
+
+@import url("../font/style.css");
+
+.card {
+  
+  font-family: 'Gilroy-Bold', sans-serif;
+  position: relative;
+  width: 297px;
+  height: 212px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 83px;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  .details {
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 1;
+
+    .duration {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -16px;
+      left: 247px;
+      font-size: 12px;
+      margin-bottom: 5px;
+      font-family: 'Gilroy-Medium', sans-serif;
+    }
+
+    .buttons {
+      display: flex;
+      position: absolute;
+      top: 30px;
+      left: 93px;
+      width: 150px;
+    }
+
+    .like-button,
+    .play-button,
+    .dislike-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: white;
+    }
+  }
+
+  &.hovered {
+    .text {
+      bottom: 76px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      z-index: -1;
+    }
+  }
+}
