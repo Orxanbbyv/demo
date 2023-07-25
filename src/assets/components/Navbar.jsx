@@ -8,6 +8,7 @@ import SVG from "../img/SVG.svg";
 import Exit from "../img/Exit-Button.svg";
 import Close from "../img/Exit-Button.png";
 import Sound from "../img/Sound.svg";
+import Menubar from "../img/MenuBar.svg";
 import LanguageSelector from "./LanguageSelector";
 import "../style/navbar.scss";
 
@@ -23,16 +24,22 @@ const Navbar = () => {
       <div className="Sound">
         <img src={Sound} />
       </div>
+      <div className="menubar">
+        <img src={Menubar} />
+      </div>
+      <div className="mobilelogo">
+        <img src={Logo} alt="logo" />
+      </div>
       <div className="firstnav">
         <div>
           <img src={Logo} alt="logo" />
         </div>
+
         <div className="menu">
           <div>Menu 1</div>
           <div>Menu 2</div>
           <div className="language">
-<LanguageSelector/>
-            
+            <LanguageSelector />
           </div>
         </div>
       </div>
@@ -52,7 +59,7 @@ const Navbar = () => {
                 <img src={item1} />
               </div>{" "}
               <div className="text">
-                The Witcher <img src={Exit} className="exitimg"/>
+                The Witcher <img src={Exit} className="exitimg" />
               </div>
             </div>
             <div>
@@ -60,7 +67,7 @@ const Navbar = () => {
                 <img src={item2} />
               </div>{" "}
               <div className="text">
-                The Queen's Gambit <img src={Exit}  className="exitimg"/>
+                The Queen's Gambit <img src={Exit} className="exitimg" />
               </div>
             </div>
             <div>
@@ -68,7 +75,7 @@ const Navbar = () => {
                 <img src={item3} />
               </div>{" "}
               <div className="text">
-                The Dark Knight <img src={Exit} className="exitimg"/>
+                The Dark Knight <img src={Exit} className="exitimg" />
               </div>
             </div>
             <div>
@@ -76,7 +83,7 @@ const Navbar = () => {
                 <img src={item4} />
               </div>{" "}
               <div className="text">
-                No Time To Day <img src={Exit} className="exitimg"/>
+                No Time To Day <img src={Exit} className="exitimg" />
               </div>
             </div>
           </div>

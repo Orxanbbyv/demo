@@ -11,6 +11,17 @@
     align-items: center;
     justify-content: space-between;
 
+
+    .menubar {
+        display: none;
+    }
+
+
+    .mobilelogo {
+        display: none;
+    }
+
+
     .Sound {
         position: absolute;
         top: 199px;
@@ -93,15 +104,15 @@
         }
 
         .element {
-            
+
             div {
-                
+
                 width: 207px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 border-radius: 3px;
-               padding-left: 3px;
+                padding-left: 3px;
                 padding-top: 5px;
 
                 .img {
@@ -140,5 +151,51 @@
         gap: 8px;
         cursor: pointer;
     }
+
+    
+    @media screen and (max-width: 768px) {
+
+        width: 487px;
+        height: 9px;
+
+        .menubar {
+            display: block;
+            width: 45px;
+            height: 45px;
+            left: 372px;
+            top: 23px;
+            position: relative;
+        }
+
+        .lastnav {
+            display: none;
+        }
+
+        .firstnav {
+            display: none;
+
+        }
+
+        .Sound {
+            display: flex;
+            width: 100px;
+            height: 39px;
+            top: 152px;
+            left: 493px;
+        
+    }
+    .mobilelogo {
+        display: block;
+        width: 1px;
+        height: 23px;
+        position: relative;
+        left: -561px;
+        bottom: -6px;
+    }    
+
+
+}
+
+   
 
 }
